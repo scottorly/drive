@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+@import 'prismjs/themes/prism-okaidia.css';
+
+html { font-family: 'Nunito', sans-serif; }
+
+html { 
+  @apply bg-gray-100 text-gray-900
+}
+
+#app {
+    @apply px-1 mb-12 max-w-full flex flex-col mx-auto
+}
+
+.img {
+  @apply object-contain max-w-full float-right mx-auto rounded-lg
+}
+
+.fullBleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+h2 {
+  @apply my-8
+}
+
+code.centered {
+  @apply block
+}
+h1, h2 {
+  font-family: 'Michroma', sans-serif;
+}
+
+.centered {
+  @apply my-3 max-w-3xl mx-auto
+}
+
+p {
+  text-indent: 1.5rem;
+}
+
+.gist {
+  @apply my-3
+}
+
+.noIndent {
+  text-indent: 0;
+}
+
+.right {
+  @apply float-right ml-4
+}
+
+.inlineCode {
+  @apply inline text-xs
+}
+
+.code {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  @apply my-12 text-xs
+}
+
+.list {
+  @apply list-none
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code[class*="language-"], pre[class*="language-"] {
+  font-family: 'Source Code Pro', sans-serif, monospace !important;
+}
+
+@screen md {
+  #app {
+      @apply px-8
+  }
+  p {
+    @apply text-xl
+  }
+
+  .inlineCode {
+    @apply text-sm
+  }
+  
+  .code {
+    @apply text-sm
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .fullBleed {
+    max-width: 1600px;
+    @apply mx-auto static
+  }
+}
