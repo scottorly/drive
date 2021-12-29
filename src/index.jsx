@@ -62,40 +62,29 @@ const SideNote = ({ children }) => {
 const blog = (
     <article>
         <section>
-            <h1>Drive</h1>
-            <h2>Functional Reactive Form Validation in iOS with RxSwift</h2>
-            <h3>by <a href='https://scottorly.github.io'>Scott Orlyck</a></h3>
-            <p>last updated: { date.toLocaleDateString() }</p>
+            <h1>DRIVE</h1>
+            <p className='subtitle'>Functional Reactive Form Validation in iOS with RxSwift</p>
+            <p className="subtitle">
+                <Link href='https://scottorly.github.io'>Scott Orlyck</Link>
+            </p>
+        </section>
+
+        <section>
             <figure>
                 <img src='https://raw.githubusercontent.com/scottorly/drive/main/src/drive.webp' alt='Ryan Gosling with a Dispose Bag'/>
+            
+                <a href='https://www.youtube.com/watch?v=KBiOF3y1W0Y'>
+                    <em>Drive</em>
+                </a>
             </figure>
-            <a href='https://www.youtube.com/watch?v=KBiOF3y1W0Y'>
-                    <i>Drive</i>
-            </a>
         </section>
     
         <section>
-            
-            <h2>INTRODUCTION</h2>
-
-            <p>
-                This blog post is intended for readers with some measure of familiarity with iOS development, 
-                functional reactive programming and alternative iOS architecture patterns.
-
-                If not here are some resources to get started.
-                <ul className={styles.list}>
-                    <li><a href='http://reactivex.io/'>ReactiveX</a></li>
-
-                    <li><a href='https://github.com/ReactiveX/RxSwift'>RxSwift</a></li>
-                    
-                    <li><a href='https://www.raywenderlich.com/34-design-patterns-by-tutorials-mvvm'>MVVM</a></li>
-                </ul>
-            </p>
-
+        
             <h2>WHY DRIVE?</h2>
 
             <p>
-                SwiftUI has been getting all the love since it was announced but I want to take some time to write about the productivity benefits of functional reactive programming using RxSwift when combined with the stability of UIKit.
+                <span className='newthought'>SwiftUI has been getting all</span> the love since it was announced but I want to take some time to write about the productivity benefits of functional reactive programming using RxSwift when combined with the stability of UIKit.
             </p>
 
             <p>
@@ -110,7 +99,7 @@ const blog = (
             <Code snippet={Snippets.example} />
 
             <p>
-                Thankfully RxSwift provides us with some wrappers around common UI patterns that can help simplify implementations. RxSwift calls these wrappers <a hre='https://github.com/ReactiveX/RxSwift/blob/main/Documentation/Traits.md'>traits</a> and today we are going to focus on the <a href="https://github.com/ReactiveX/RxSwift/blob/main/Documentation/Traits.md#driver">Driver</a> trait.
+                Thankfully RxSwift provides us with some wrappers around common UI patterns that can help simplify implementations. RxSwift calls these wrappers <Link hre='https://github.com/ReactiveX/RxSwift/blob/main/Documentation/Traits.md'>traits</Link> and today we are going to focus on the <a href="https://github.com/ReactiveX/RxSwift/blob/main/Documentation/Traits.md#driver">Driver</a> trait.
             </p>
 
             <p>
@@ -198,7 +187,7 @@ const blog = (
             The success state is where the application would presumably handle navigating elsewhere or dismissing the sign in screen if presented modally. In a real world application the response should wrap a more informative error message that can then be displayed to the user.
         </p>
 
-        <h2>Test Drive</h2>
+        <h2>TEST DRIVE</h2>
 
         <p>
             What about unit testing the ViewModel you ask? Simple, since all the ViewModel knows is that it needs 3 Drivers we can provide those easily. 
@@ -206,8 +195,8 @@ const blog = (
 
         <Code snippet={Snippets.testDrive} />
 
-        <h2>In the Bag</h2>
-        <p>That's the post, you can find the completed working project <a href='https://github.com/ScottORLY/drive'>here</a>. Feel free to drop some feedback or questions on <a href='https://twitter.com/orlyck'>Twitter</a> or you can go to the <a href='https://github.com/ScottORLY/drive-blog'>source</a> of this blog post itself and create an issue or pull-request. Until next time.</p>
+        <h2>IN THE BAG</h2>
+        <p>That's the post, you can find the completed working project <a href='https://github.com/ScottORLY/drive'>here</a>. Feel free to drop some feedback or questions on <Link href='https://twitter.com/orlyck'>Twitter</Link> or you can go to the <Link href='https://github.com/Scottorly/drive'>source</Link> of this blog post itself and create an issue or pull-request. Until next time.</p>
         </section>
     </article>
 )
