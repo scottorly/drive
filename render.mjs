@@ -1,6 +1,7 @@
 
 import puppeteer from 'puppeteer'
 import { minify } from 'html-minifier'
+import path from 'path'
 import fs from 'fs'
 import { preview } from 'vite'
 import { exit } from 'process'
