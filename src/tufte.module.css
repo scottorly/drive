@@ -1,35 +1,4 @@
-
-@font-face {
-    font-family: "BemboBook";
-    src: url("/bembo/BemboBook/font.woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "BemboBook";
-    src: url("/bembo/BemboBookItalic/font.woff2");
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "BemboBook";
-    src: url("/bembo/BemboBookBold/font.woff2");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "BemboBookOsF";
-    src: url("/bembo/BemboBookItalicOsF/font.woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+@import url('https://use.typekit.net/hax1mrg.css');
 
 /* Tufte CSS styles */
 html {
@@ -41,7 +10,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-left: 12.5%;
-    font-family: BemboBook, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-family: goldenbook;
     background-color: #fffff8;
     color: #111;
     max-width: 1400px;
@@ -102,7 +71,7 @@ p.subtitle {
 }
 
 .numeral {
-    font-family: BemboBookOsF;
+    font-family: goldenbook;
 }
 
 .danger {
@@ -286,7 +255,8 @@ img {
 
 .sidenote-number:after,
 .sidenote:before {
-    font-family: BemboBookOsF;
+    font-family: goldenbook;
+
     position: relative;
     vertical-align: baseline;
 }
@@ -327,7 +297,7 @@ div.table-wrapper {
 }
 
 code, pre > code {
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family:anonymous-pro, monospace;
     font-size: 1.0rem;
     line-height: 1.42;
     -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
